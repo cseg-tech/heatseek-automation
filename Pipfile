@@ -5,8 +5,11 @@ name = "pypi"
 
 [packages]
 "flake8" = "*"
+pandas = "*"
 
 [dev-packages]
+v = {version = "*", editable = true}
+pytest = "*"
 
 [requires]
 python_version = "3.7"
