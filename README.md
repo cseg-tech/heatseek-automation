@@ -10,7 +10,8 @@ Automation Tool for Heat Seek
 
 ## Scripts
 
-### No scripts yet!
+*TestFolder has all message sending work, read the README found within
 
 ## Contributors
 * Nick Liu, @liunick
+* Mustafa Eyceoz, @Maxusmusti
