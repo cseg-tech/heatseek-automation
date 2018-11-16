@@ -15,3 +15,4 @@ Automation Tool for Heat Seek
 ## Contributors
 * Nick Liu, @liunick
 * Mustafa Eyceoz, @Maxusmusti
+* Cesar Ibarra, @francesar
