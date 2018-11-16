@@ -9,7 +9,7 @@ class Automation():
 
     def run(self):
         self.logger.info("running")
-        self.logger.info("Attempting to send SMS to phone num: +17342728388")
-        self.twilioClient.sendSMS("+17342728388")
+        client_number = self.config['TWILIO']['CLIENT_PHONE_NUMBER']
+        self.logger.info("Attempting to send SMS to phone num")
+        self.twilioClient.sendSMS(client_number)
         self.logger.info("Finished sending attempt")
-        
