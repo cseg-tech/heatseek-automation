@@ -3,7 +3,6 @@ require 'logger'
 
 class TwilioClient
     def initialize(config)
-        puts config.groups
         @config = config
         @logger = Logger.new(STDOUT)
         account_sid = config['API_KEYS']['TWILIO_ACCOUNT_SID']

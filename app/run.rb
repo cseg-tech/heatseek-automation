@@ -1,11 +1,11 @@
 require 'parseconfig'
+
 require_relative 'twilio_client/twilio_client'
 require_relative 'automation/automation'
 require_relative 'email/email'
 require_relative 'email/testemail'
 
-
-config = ParseConfig.new('./config/config.ini')
+config = ParseConfig.new('./app/config.ini')
 
 # Initialize the Twilio Client
 twilio_client = TwilioClient.new(config)

@@ -6,11 +6,11 @@ class EmailClient
     @config = config
     @logger = Logger.new(STDOUT)
     Mail.defaults do
-      delivery_method :smtp, { :address   => "smtp.sendgrid.net",
+      delivery_method :smtp, { :address   => config["SENDGRID"]["ADDRESS"],
                                :port      => 587,
-                               :domain    => "gmail.com",
-                               :user_name => "maggiefei",
-                               :password  => "heats33k",
+                               :domain    => config["SENDGRID"]["DOMAIN"],
+                               :user_name => config["SENDGRID"]["USERNAME"],
+                               :password  => config["SENDGRID"]["PASSWORD"],
                                :authentication => 'plain',
                                :enable_starttls_auto => true } 
     end
