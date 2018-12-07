@@ -1,10 +1,15 @@
 require 'logger'
 
 class Automation
-    def initialize(config, twilio_client)
+    def initialize(config, twilio_client, email_client)
         @config = config
         @logger = Logger.new(STDOUT)
         @twilio_client = twilio_client
+        @email_client = email_client
+    end
+
+    def send_email(email)
+        @email_client.send_email(email)
     end
 
     def run
